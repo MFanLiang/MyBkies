@@ -1,0 +1,44 @@
+@import '../../style/default';
+@import '../../style/common';
+
+//地图的区域配置样式
+.order-map{
+  // display: block;
+  margin: 20px 0px 0px 20px;
+  width: calc(65vw);
+  height: 400px;
+}
+
+// 地图下方的描述信息的区域配置样式
+.detail-items{
+    width: calc(65vw);
+    margin-left:90px;
+    padding:25px 50px 25px 0;
+    border-bottom:1px solid @colorN;
+    &:last-child{
+      border-bottom:none;
+    }
+    .item-title{
+      margin:20px 0;
+      font-size:@fontG;
+      color:@colorU;
+    }
+    .detail-form{
+      li{
+        .clearfix;
+        margin:20px 0;
+        line-height:20px;
+        font-size:15px;
+        color:@colorC;
+      }
+    }
+    .detail-form-left{
+      float:left;
+      width:164px;
+      text-align:right;
+      color:@colorH;
+    }
+    .detail-form-content{
+      padding-left:194px;
+    }
+}

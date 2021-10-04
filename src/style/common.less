@@ -1,0 +1,67 @@
+@import './default.less';
+@import './loading.less';
+
+ul,
+li {
+	list-style-type: none;
+}
+
+.clearfix {
+	&::after {
+		content: '';
+		clear: both;
+		display: block;
+		visibility: hidden;
+	}
+}
+
+.container {
+	display: flex;
+
+	.nav-left {
+		width: 15%;
+		min-width: 180px;
+		height: calc(100vh);
+		background-color: #001529;
+	}
+
+	.main {
+		height: calc(100vh);
+		flex: 1;
+		background-color: @colorL;
+		overflow: auto;
+
+		.content {
+			position: relative;
+			padding: 20px;
+		}
+	}
+}
+
+.content-wrap {
+	background: #ffffff;
+	border: 1px solid #e8e8e8;
+	margin-top: -1px;
+}
+
+//common页面简单头
+.simple-page {
+	background: coral;
+	display: block !important;
+
+	.header-top {
+		background: #1890ff;
+		color: @colorM;
+	}
+
+	.ant-form,
+	.ant-col-12,
+	.weather {
+		display: none;
+	}
+}
+
+.card-wraps {
+	width: calc(80vw);
+	height: calc(100vh)
+}

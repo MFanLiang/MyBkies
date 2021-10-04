@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		let a = {
+			age: 1,
+			jobs: {
+				work: 'FSECK'
+			}
+		}
+
+		let deep = cloneDeep(a)
+		a.jobs.work = 'mengfanliang'
+		console.log("a对象的work属性为：", a.jobs.work);
+		console.log("deep对象的work属性为：", deep.jobs.work);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
